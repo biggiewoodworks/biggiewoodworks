@@ -2,1123 +2,111 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Biggie Woodworks | Mobile Woodworks & Repairs</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Biggie Woodworks | Mobile Carpenter & Furniture Repairs Nairobi
+  </title>
 
   <meta
     name="description"
-    content="Biggie Woodworks provides mobile woodworks, furniture repairs, custom carpentry and formwork services in Nairobi and along Mombasa Road."
+    content="Biggie Woodworks provides mobile carpentry, furniture repairs, custom woodwork and timber formwork in Nairobi, Mombasa Road and surrounding areas."
+  >
+
+  <meta
+    name="keywords"
+    content="carpenter Nairobi, furniture repair Nairobi, mobile carpenter Nairobi, carpentry Mombasa Road, furniture repairs Mombasa Road, formwork Nairobi, custom woodwork Nairobi"
   >
 
   <meta name="theme-color" content="#171411">
+
+  <meta property="og:title" content="Biggie Woodworks | Mobile Woodworks & Repairs">
+  <meta
+    property="og:description"
+    content="Your carpenter comes to you. Furniture repairs, custom woodwork, carpentry and formwork."
+  >
+  <meta property="og:type" content="website">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=JetBrains+Mono:wght@400;500&display=swap"
     rel="stylesheet"
   >
 
-  <style>
-    /* =========================================================
-       BIGGIE WOODWORKS
-       Main website styles
-       ========================================================= */
-
-    :root {
-      --black: #171411;
-      --dark: #201b17;
-      --dark-2: #27211c;
-
-      --cream: #eee7da;
-      --cream-soft: #cfc5b4;
-
-      --wood: #b98a5a;
-      --orange: #b85d25;
-      --orange-light: #d17132;
-
-      --line: rgba(238, 231, 218, 0.14);
-      --line-strong: rgba(238, 231, 218, 0.22);
-
-      --max-width: 1160px;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      background: var(--black);
-      color: var(--cream);
-      font-family: "Work Sans", sans-serif;
-      line-height: 1.6;
-      overflow-x: hidden;
-    }
-
-    img {
-      display: block;
-      width: 100%;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    button {
-      font: inherit;
-    }
-
-    .container {
-      width: min(var(--max-width), calc(100% - 40px));
-      margin: 0 auto;
-    }
-
-    .mono {
-      font-family: "JetBrains Mono", monospace;
-    }
-
-    h1,
-    h2,
-    h3 {
-      font-family: "Fraunces", serif;
-      line-height: 1.1;
-      font-weight: 600;
-    }
-
-
-    /* =========================================================
-       HEADER
-       ========================================================= */
-
-    header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 1000;
-
-      background: rgba(23, 20, 17, 0.88);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-
-      border-bottom: 1px solid var(--line);
-    }
-
-    .navbar {
-      min-height: 72px;
-
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 11px;
-
-      font-family: "Fraunces", serif;
-      font-size: 1.1rem;
-      font-weight: 600;
-    }
-
-    .brand-mark {
-      width: 36px;
-      height: 36px;
-
-      display: grid;
-      place-items: center;
-
-      border: 1px solid var(--orange-light);
-      border-radius: 50%;
-
-      color: var(--orange-light);
-
-      font-family: "JetBrains Mono", monospace;
-      font-size: 0.65rem;
-      font-weight: 500;
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 30px;
-    }
-
-    .nav-links a {
-      color: var(--cream-soft);
-      font-size: 0.88rem;
-
-      transition: color 0.2s ease;
-    }
-
-    .nav-links a:hover {
-      color: var(--orange-light);
-    }
-
-    .nav-call {
-      padding: 10px 17px;
-
-      background: var(--orange);
-      color: var(--cream) !important;
-
-      border: 1px solid var(--orange);
-      border-radius: 3px;
-
-      font-weight: 600;
-    }
-
-    .nav-call:hover {
-      background: var(--orange-light);
-      border-color: var(--orange-light);
-    }
-
-    .menu-button {
-      display: none;
-
-      background: transparent;
-      border: 0;
-
-      color: var(--cream);
-      font-size: 1.5rem;
-
-      cursor: pointer;
-    }
-
-
-    /* =========================================================
-       HERO
-       ========================================================= */
-
-    .hero {
-      min-height: 100vh;
-
-      display: flex;
-      align-items: center;
-
-      padding: 130px 0 80px;
-
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero::before {
-      content: "";
-
-      position: absolute;
-      width: 500px;
-      height: 500px;
-
-      right: -180px;
-      top: 80px;
-
-      border: 1px solid rgba(185, 138, 90, 0.12);
-      border-radius: 50%;
-
-      box-shadow:
-        0 0 0 45px rgba(185, 138, 90, 0.025),
-        0 0 0 90px rgba(185, 138, 90, 0.018);
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 70px;
-
-      align-items: center;
-    }
-
-    .eyebrow {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-
-      margin-bottom: 22px;
-
-      color: var(--orange-light);
-
-      font-family: "JetBrains Mono", monospace;
-      font-size: 0.73rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-    }
-
-    .eyebrow::before {
-      content: "";
-
-      width: 28px;
-      height: 1px;
-
-      background: var(--orange-light);
-    }
-
-    .hero h1 {
-      max-width: 780px;
-
-      font-size: clamp(3rem, 7vw, 5.5rem);
-      letter-spacing: -0.035em;
-
-      margin-bottom: 25px;
-    }
-
-    .hero h1 em {
-      color: var(--wood);
-      font-style: italic;
-      font-weight: 500;
-    }
-
-    .hero-description {
-      max-width: 570px;
-
-      color: var(--cream-soft);
-
-      font-size: 1.08rem;
-      line-height: 1.75;
-
-      margin-bottom: 32px;
-    }
-
-    .hero-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 13px;
-    }
-
-    .button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-
-      min-height: 50px;
-      padding: 0 23px;
-
-      border-radius: 3px;
-
-      font-size: 0.9rem;
-      font-weight: 600;
-
-      transition:
-        transform 0.2s ease,
-        background 0.2s ease,
-        border-color 0.2s ease;
-    }
-
-    .button:hover {
-      transform: translateY(-2px);
-    }
-
-    .button-primary {
-      background: var(--orange);
-      border: 1px solid var(--orange);
-    }
-
-    .button-primary:hover {
-      background: var(--orange-light);
-      border-color: var(--orange-light);
-    }
-
-    .button-outline {
-      border: 1px solid var(--line-strong);
-      color: var(--cream);
-    }
-
-    .button-outline:hover {
-      border-color: var(--wood);
-      color: var(--wood);
-    }
-
-    .hero-proof {
-      margin-top: 48px;
-
-      display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
-    }
-
-    .proof-item {
-      padding-left: 15px;
-
-      border-left: 1px solid var(--line-strong);
-    }
-
-    .proof-title {
-      display: block;
-
-      color: var(--wood);
-
-      font-family: "Fraunces", serif;
-      font-size: 1.25rem;
-      font-weight: 600;
-    }
-
-    .proof-text {
-      display: block;
-
-      margin-top: 2px;
-
-      color: var(--cream-soft);
-
-      font-family: "JetBrains Mono", monospace;
-      font-size: 0.68rem;
-      letter-spacing: 0.04em;
-    }
-
-    .hero-visual {
-      position: relative;
-
-      max-width: 430px;
-      margin-left: auto;
-    }
-
-    .hero-image-frame {
-      position: relative;
-
-      aspect-ratio: 4 / 5;
-
-      overflow: hidden;
-
-      border: 1px solid var(--line-strong);
-      background: var(--dark-2);
-    }
-
-    .hero-image-frame img {
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-    }
-
-    .hero-image-frame::after {
-      content: "";
-
-      position: absolute;
-      inset: 0;
-
-      background:
-        linear-gradient(
-          180deg,
-          rgba(23, 20, 17, 0.05) 35%,
-          rgba(23, 20, 17, 0.55) 100%
-        );
-    }
-
-    .hero-label {
-      position: absolute;
-
-      left: 18px;
-      bottom: 18px;
-
-      z-index: 2;
-
-      padding: 8px 11px;
-
-      background: rgba(23, 20, 17, 0.85);
-      border: 1px solid var(--line-strong);
-
-      color: var(--cream);
-
-      font-family: "JetBrains Mono", monospace;
-      font-size: 0.68rem;
-      letter-spacing: 0.06em;
-    }
-
-
-    /* =========================================================
-       GENERAL SECTIONS
-       ========================================================= */
-
-    section {
-      padding: 105px 0;
-      position: relative;
-    }
-
-    .section-tag {
-      display: block;
-
-      margin-bottom: 13px;
-
-      color: var(--orange-light);
-
-      font-family: "JetBrains Mono", monospace;
-      font-size: 0.7rem;
-      letter-spacing: 0.13em;
-      text-transform: uppercase;
-    }
-
-    .section-title {
-      max-width: 720px;
-
-      font-size: clamp(2rem, 4vw, 3.2rem);
-      letter-spacing: -0.025em;
-    }
-
-    .section-description {
-      max-width: 650px;
-
-      margin-top: 16px;
-
-      color: var(--cream-soft);
-
-      font-size: 1rem;
-    }
-
-    .section-header {
-      margin-bottom: 55px;
-    }
-
-
-    /* =========================================================
-       SERVICES
-       ========================================================= */
-
-    .services {
-      background: var(--dark);
-
-      border-top: 1px solid var(--line);
-      border-bottom: 1px solid var(--line);
-    }
-
-    .service-list {
-      border-top: 1px solid var(--line);
-    }
-
-    .service {
-      display: grid;
-      grid-template-columns: 90px 1fr 1.15fr 30px;
-      gap: 25px;
-
-      align-items: center;
-
-      padding: 27px 0;
-
-      border-bottom: 1px solid var(--line);
-
-      transition:
-        padding-left 0.25s ease,
-        background 0.25s ease;
-    }
-
-    .service:hover {
-      padding-left: 12px;
-      background: rgba(238, 231, 218, 0.018);
-    }
-
-    .service-number {
-      color: var(--wood);
-
-      font-family: "JetBrains Mono", monospace;
-      font-size: 0.7rem;
-    }
-
-    .service h3 {
-      font-size: 1.25rem;
-    }
-
-    .service p {
-      color: var(--cream-soft);
-      font-size: 0.92rem;
-    }
-
-    .service-arrow {
-      color: var(--orange-light);
-      font-size: 1.3rem;
-    }
-
-
-    /* =========================================================
-       ABOUT
-       ========================================================= */
-
-    .about-grid {
-      display: grid;
-      grid-template-columns: 0.9fr 1.1fr;
-      gap: 70px;
-
-      align-items: center;
-    }
-
-    .about-image {
-      aspect-ratio: 4 / 5;
-
-      overflow: hidden;
-
-      border: 1px solid var(--line-strong);
-      background: var(--dark-2);
-    }
-
-    .about-image img {
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .about-content h2 {
-      font-size: clamp(2rem, 4vw, 3.1rem);
-
-      margin-bottom: 22px;
-    }
-
-    .about-content p {
-      color: var(--cream-soft);
-
-      margin-bottom: 17px;
-
-      font-size: 1rem;
-    }
-
-    .about-points {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 14px;
-
-      margin-top: 30px;
-    }
-
-    .about-point {
-      padding: 17px;
-
-      border: 1px solid var(--line);
-      background: rgba(238, 231, 218, 0.02);
-    }
-
-    .about-point strong {
-      display: block;
-
-      margin-bottom: 4px;
-
-      font-family: "Fraunces", serif;
-      font-size: 1.05rem;
-    }
-
-    .about-point span {
-      color: var(--cream-soft);
-      font-size: 0.82rem;
-    }
-
-
-    /* =========================================================
-       PROCESS
-       ========================================================= */
-
-    .process {
-      background: var(--dark);
-      border-top: 1px solid var(--line);
-      border-bottom: 1px solid var(--line);
-    }
-
-    .process-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-
-      border: 1px solid var(--line);
-    }
-
-    .process-card {
-      padding: 38px 30px;
-
-      border-right: 1px solid var(--line);
-    }
-
-    .process-card:last-child {
-      border-right: 0;
-    }
-
-    .process-number {
-      display: block;
-
-      margin-bottom: 20px;
-
-      color: var(--orange-light);
-
-      font-family: "JetBrains Mono", monospace;
-      font-size: 0.7rem;
-      letter-spacing: 0.1em;
-    }
-
-    .process-card h3 {
-      margin-bottom: 10px;
-
-      font-size: 1.25rem;
-    }
-
-    .process-card p {
-      color: var(--cream-soft);
-      font-size: 0.9rem;
-    }
-
-
-    /* =========================================================
-       WORK / GALLERY
-       ========================================================= */
-
-    .work {
-      background: var(--black);
-    }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: 1.3fr 0.7fr;
-
-      gap: 18px;
-    }
-
-    .gallery-card {
-      position: relative;
-
-      min-height: 390px;
-
-      overflow: hidden;
-
-      border: 1px solid var(--line-strong);
-      background: var(--dark-2);
-    }
-
-    .gallery-card img {
-      width: 100%;
-      height: 100%;
-
-      object-fit: cover;
-
-      transition: transform 0.45s ease;
-    }
-
-    .gallery-card:hover img {
-      transform: scale(1.035);
-    }
-
-    .gallery-card::after {
-      content: "";
-
-      position: absolute;
-      inset: 0;
-
-      background:
-        linear-gradient(
-          180deg,
-          transparent 40%,
-          rgba(23, 20, 17, 0.82) 100%
-        );
-
-      pointer-events: none;
-    }
-
-    .gallery-caption {
-      position: absolute;
-
-      left: 20px;
-      right: 20px;
-      bottom: 18px;
-
-      z-index: 2;
-    }
-
-    .gallery-caption span {
-      display: block;
-
-      margin-bottom: 4px;
-
-      color: var(--orange-light);
-
-      font-family: "JetBrains Mono", monospace;
-      font-size: 0.66rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    .gallery-caption strong {
-      font-family: "Fraunces", serif;
-      font-size: 1.3rem;
-    }
-
-
-    /* =========================================================
-       CTA
-       ========================================================= */
-
-    .contact {
-      padding: 90px 0;
-    }
-
-    .contact-box {
-      display: grid;
-      grid-template-columns: 1.25fr 0.75fr;
-
-      overflow: hidden;
-
-      border: 1px solid var(--line-strong);
-    }
-
-    .contact-main {
-      padding: 55px 50px;
-
-      background: var(--dark);
-    }
-
-    .contact-main h2 {
-      max-width: 600px;
-
-      margin-bottom: 15px;
-
-      font-size: clamp(2rem, 4vw, 3rem);
-    }
-
-    .contact-main p {
-      max-width: 560px;
-
-      margin-bottom: 28px;
-
-      color: var(--cream-soft);
-    }
-
-    .phone {
-      display: inline-block;
-
-      margin-bottom: 27px;
-
-      color: var(--orange-light);
-
-      border-bottom: 1px solid var(--orange-light);
-
-      font-family: "JetBrains Mono", monospace;
-      font-size: 1.25rem;
-
-      padding-bottom: 5px;
-    }
-
-    .contact-side {
-      padding: 50px;
-
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 24px;
-
-      background: var(--orange);
-    }
-
-    .contact-detail {
-      padding-bottom: 17px;
-
-      border-bottom: 1px solid rgba(238, 231, 218, 0.25);
-    }
-
-    .contact-detail:last-child {
-      padding-bottom: 0;
-      border-bottom: 0;
-    }
-
-    .contact-detail small {
-      display: block;
-
-      margin-bottom: 4px;
-
-      font-family: "JetBrains Mono", monospace;
-      font-size: 0.65rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-
-      opacity: 0.8;
-    }
-
-    .contact-detail strong {
-      font-family: "Fraunces", serif;
-      font-size: 1.15rem;
-    }
-
-
-    /* =========================================================
-       FOOTER
-       ========================================================= */
-
-    footer {
-      padding: 32px 0;
-
-      border-top: 1px solid var(--line);
-    }
-
-    .footer-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      gap: 20px;
-    }
-
-    .footer-brand {
-      font-family: "Fraunces", serif;
-      color: var(--cream-soft);
-    }
-
-    .footer-note {
-      color: rgba(207, 197, 180, 0.65);
-
-      font-family: "JetBrains Mono", monospace;
-      font-size: 0.65rem;
-    }
-
-
-    /* =========================================================
-       MOBILE MENU
-       ========================================================= */
-
-    .mobile-menu {
-      display: none;
-
-      position: absolute;
-      top: 72px;
-      left: 0;
-      right: 0;
-
-      padding: 15px 20px 25px;
-
-      background: rgba(23, 20, 17, 0.98);
-
-      border-bottom: 1px solid var(--line);
-    }
-
-    .mobile-menu.active {
-      display: block;
-    }
-
-    .mobile-menu a {
-      display: block;
-
-      padding: 14px 0;
-
-      border-bottom: 1px solid var(--line);
-
-      color: var(--cream-soft);
-    }
-
-    .mobile-menu .mobile-call {
-      margin-top: 12px;
-
-      padding: 13px;
-
-      text-align: center;
-
-      background: var(--orange);
-
-      border: 0;
-    }
-
-
-    /* =========================================================
-       RESPONSIVE
-       ========================================================= */
-
-    @media (max-width: 900px) {
-
-      .nav-links {
-        display: none;
-      }
-
-      .menu-button {
-        display: block;
-      }
-
-      .hero-grid {
-        grid-template-columns: 1fr;
-        gap: 50px;
-      }
-
-      .hero-visual {
-        max-width: 520px;
-        margin: 0;
-      }
-
-      .about-grid {
-        grid-template-columns: 1fr;
-        gap: 45px;
-      }
-
-      .about-image {
-        max-width: 520px;
-      }
-
-      .service {
-        grid-template-columns: 70px 1fr 30px;
-      }
-
-      .service p {
-        grid-column: 2 / 3;
-      }
-
-      .process-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .process-card {
-        border-right: 0;
-        border-bottom: 1px solid var(--line);
-      }
-
-      .process-card:last-child {
-        border-bottom: 0;
-      }
-
-      .contact-box {
-        grid-template-columns: 1fr;
-      }
-    }
-
-
-    @media (max-width: 600px) {
-
-      .container {
-        width: min(var(--max-width), calc(100% - 30px));
-      }
-
-      section {
-        padding: 78px 0;
-      }
-
-      .hero {
-        padding: 115px 0 65px;
-      }
-
-      .hero h1 {
-        font-size: clamp(2.65rem, 13vw, 4rem);
-      }
-
-      .hero-description {
-        font-size: 0.98rem;
-      }
-
-      .hero-buttons {
-        flex-direction: column;
-      }
-
-      .button {
-        width: 100%;
-      }
-
-      .hero-proof {
-        gap: 18px;
-      }
-
-      .proof-item {
-        width: 100%;
-      }
-
-      .service {
-        grid-template-columns: 1fr;
-        gap: 7px;
-
-        padding: 23px 0;
-      }
-
-      .service p {
-        grid-column: auto;
-      }
-
-      .service-arrow {
-        display: none;
-      }
-
-      .about-points {
-        grid-template-columns: 1fr;
-      }
-
-      .gallery {
-        grid-template-columns: 1fr;
-      }
-
-      .gallery-card {
-        min-height: 330px;
-      }
-
-      .contact-main,
-      .contact-side {
-        padding: 35px 25px;
-      }
-
-      .footer-content {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 
 <body>
 
-
-  <!-- =======================================================
+  <!-- =========================
        HEADER
-       ======================================================= -->
+  ========================== -->
 
-  <header>
+  <header class="site-header" id="siteHeader">
 
-    <nav class="navbar container">
+    <div class="container nav-wrapper">
 
-      <a href="#home" class="brand">
+      <a href="#home" class="brand" aria-label="Biggie Woodworks home">
 
         <span class="brand-mark">BW</span>
 
-        <span>Biggie Woodworks</span>
+        <span class="brand-name">
+          Biggie Woodworks
+        </span>
 
       </a>
 
 
-      <div class="nav-links">
+      <nav class="desktop-nav" aria-label="Main navigation">
 
         <a href="#services">Services</a>
-
-        <a href="#about">About</a>
-
+        <a href="#about">Why Us</a>
         <a href="#work">Our Work</a>
-
-        <a href="#process">How It Works</a>
-
-        <a
-          href="tel:0799258838"
-          class="nav-call"
-        >
-          Call 0799 258 838
+        <a href="#process">Process</a>
+        <a href="#contact" class="nav-cta">
+          Get a Quote
         </a>
 
-      </div>
+      </nav>
 
 
       <button
-        class="menu-button"
-        id="menuButton"
-        aria-label="Open menu"
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="Open navigation"
         aria-expanded="false"
+        aria-controls="mobileNav"
       >
-        ☰
+        <span></span>
+        <span></span>
       </button>
 
-    </nav>
+    </div>
 
 
-    <div class="mobile-menu" id="mobileMenu">
+    <nav
+      class="mobile-nav"
+      id="mobileNav"
+      aria-label="Mobile navigation"
+    >
 
       <a href="#services">Services</a>
-
-      <a href="#about">About</a>
-
+      <a href="#about">Why Us</a>
       <a href="#work">Our Work</a>
-
       <a href="#process">How It Works</a>
-
-      <a
-        href="tel:0799258838"
-        class="mobile-call"
-      >
-        Call 0799 258 838
+      <a href="#contact" class="mobile-nav-cta">
+        Get a Quote
       </a>
 
-    </div>
+    </nav>
 
   </header>
 
@@ -1126,51 +114,51 @@
 
   <main>
 
-
-    <!-- =====================================================
+    <!-- =========================
          HERO
-         ===================================================== -->
+    ========================== -->
 
     <section class="hero" id="home">
 
       <div class="container hero-grid">
 
-
-        <div class="hero-content">
+        <div class="hero-copy">
 
           <div class="eyebrow">
-            Mobile Woodworks & Repairs
+            <span></span>
+            Mobile Carpentry · Nairobi
           </div>
 
 
           <h1>
-            Woodwork that comes
-            <em>to you.</em>
+            Your carpenter
+            <em>comes to you.</em>
           </h1>
 
 
-          <p class="hero-description">
-            Biggie Woodworks provides on-site furniture repairs,
-            custom woodwork, carpentry and formwork. We bring the
-            tools to your home, workspace or construction site.
+          <p class="hero-text">
+            Furniture repairs, custom woodwork, carpentry and
+            timber formwork — handled at your home, business
+            or construction site where practical.
           </p>
 
 
-          <div class="hero-buttons">
+          <div class="hero-actions">
 
             <a
               href="https://wa.me/254799258838"
-              class="button button-primary"
+              class="btn btn-primary"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
             >
-              WhatsApp Us
+              Send a Photo on WhatsApp
+              <span>↗</span>
             </a>
 
 
             <a
               href="tel:0799258838"
-              class="button button-outline"
+              class="btn btn-secondary"
             >
               Call 0799 258 838
             </a>
@@ -1178,470 +166,32 @@
           </div>
 
 
-          <div class="hero-proof">
+          <div class="hero-note">
 
-            <div class="proof-item">
+            <span class="status-dot"></span>
 
-              <span class="proof-title">
-                Mobile
-              </span>
-
-              <span class="proof-text">
-                WE COME TO YOU
-              </span>
-
-            </div>
-
-
-            <div class="proof-item">
-
-              <span class="proof-title">
-                Custom
-              </span>
-
-              <span class="proof-text">
-                BUILT TO MEASURE
-              </span>
-
-            </div>
-
-
-            <div class="proof-item">
-
-              <span class="proof-title">
-                Practical
-              </span>
-
-              <span class="proof-text">
-                BUILT TO WORK
-              </span>
-
-            </div>
+            Serving Nairobi, Mombasa Road & surrounding areas
 
           </div>
 
         </div>
 
 
+        <div class="hero-media">
 
-        <!-- REAL PHOTO -->
-        <div class="hero-visual">
-
-          <div class="hero-image-frame">
+          <div class="hero-image">
 
             <img
               src="images/98658.jpg"
-              alt="Biggie Woodworks timber formwork project"
-              loading="eager"
+              alt="Timber formwork project completed by Biggie Woodworks"
+              fetchpriority="high"
             >
 
-            <div class="hero-label">
-              ACTUAL WORK · FORM­WORK
-            </div>
+            <div class="image-overlay"></div>
 
-          </div>
+            <div class="image-label">
 
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- =====================================================
-         SERVICES
-         ===================================================== -->
-
-    <section class="services" id="services">
-
-      <div class="container">
-
-        <div class="section-header">
-
-          <span class="section-tag">
-            What We Do
-          </span>
-
-          <h2 class="section-title">
-            Practical woodwork.
-            Done properly.
-          </h2>
-
-          <p class="section-description">
-            From repairing existing furniture to building timber
-            structures on site, we focus on work that needs a
-            skilled pair of hands and proper execution.
-          </p>
-
-        </div>
-
-
-
-        <div class="service-list">
-
-
-          <div class="service">
-
-            <span class="service-number">
-              01
-            </span>
-
-            <h3>
-              Furniture Repairs
-            </h3>
-
-            <p>
-              Repairing broken joints, loose furniture, damaged
-              frames, drawers and other common wooden furniture
-              problems.
-            </p>
-
-            <span class="service-arrow">
-              →
-            </span>
-
-          </div>
-
-
-
-          <div class="service">
-
-            <span class="service-number">
-              02
-            </span>
-
-            <h3>
-              Custom Woodwork
-            </h3>
-
-            <p>
-              Small custom pieces, shelves, tables, wooden
-              fittings and other projects made to your measurements.
-            </p>
-
-            <span class="service-arrow">
-              →
-            </span>
-
-          </div>
-
-
-
-          <div class="service">
-
-            <span class="service-number">
-              03
-            </span>
-
-            <h3>
-              Formwork
-            </h3>
-
-            <p>
-              Timber formwork and shuttering work for concrete
-              construction, prepared and assembled on site.
-            </p>
-
-            <span class="service-arrow">
-              →
-            </span>
-
-          </div>
-
-
-
-          <div class="service">
-
-            <span class="service-number">
-              04
-            </span>
-
-            <h3>
-              Carpentry & Fitting
-            </h3>
-
-            <p>
-              General carpentry, wood fittings, assembly and
-              practical on-site woodwork for homes and businesses.
-            </p>
-
-            <span class="service-arrow">
-              →
-            </span>
-
-          </div>
-
-
-
-          <div class="service">
-
-            <span class="service-number">
-              05
-            </span>
-
-            <h3>
-              Woodwork Maintenance
-            </h3>
-
-            <p>
-              Fixing and improving existing wooden structures
-              before small problems become expensive replacements.
-            </p>
-
-            <span class="service-arrow">
-              →
-            </span>
-
-          </div>
-
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- =====================================================
-         ABOUT
-         ===================================================== -->
-
-    <section class="about" id="about">
-
-      <div class="container about-grid">
-
-
-        <!-- REAL PHOTO -->
-        <div class="about-image">
-
-          <img
-            src="images/94404.jpg"
-            alt="Biggie Woodworks handmade wooden business signs"
-            loading="lazy"
-          >
-
-        </div>
-
-
-
-        <div class="about-content">
-
-          <span class="section-tag">
-            About Biggie Woodworks
-          </span>
-
-          <h2>
-            We build, repair and work where the job is.
-          </h2>
-
-          <p>
-            Biggie Woodworks is a mobile carpentry and woodworks
-            service focused on practical solutions for homes,
-            businesses and construction sites.
-          </p>
-
-          <p>
-            Instead of making every customer transport heavy or
-            awkward furniture to a workshop, we bring the work
-            to the customer whenever the job can be handled on site.
-          </p>
-
-          <div class="about-points">
-
-            <div class="about-point">
-
-              <strong>
-                Mobile service
-              </strong>
-
-              <span>
-                We come to your location where practical.
-              </span>
-
-            </div>
-
-
-            <div class="about-point">
-
-              <strong>
-                Clear work
-              </strong>
-
-              <span>
-                We assess the job before starting.
-              </span>
-
-            </div>
-
-
-            <div class="about-point">
-
-              <strong>
-                Custom work
-              </strong>
-
-              <span>
-                Measurements come before construction.
-              </span>
-
-            </div>
-
-
-            <div class="about-point">
-
-              <strong>
-                Practical results
-              </strong>
-
-              <span>
-                Built for actual everyday use.
-              </span>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- =====================================================
-         PROCESS
-         ===================================================== -->
-
-    <section class="process" id="process">
-
-      <div class="container">
-
-        <div class="section-header">
-
-          <span class="section-tag">
-            How It Works
-          </span>
-
-          <h2 class="section-title">
-            Simple from first message to finished job.
-          </h2>
-
-        </div>
-
-
-        <div class="process-grid">
-
-
-          <div class="process-card">
-
-            <span class="process-number">
-              STEP 01 · CONTACT
-            </span>
-
-            <h3>
-              Send the job
-            </h3>
-
-            <p>
-              Call or WhatsApp us. Send a description, measurements
-              or photos where possible.
-            </p>
-
-          </div>
-
-
-
-          <div class="process-card">
-
-            <span class="process-number">
-              STEP 02 · ASSESS
-            </span>
-
-            <h3>
-              We assess it
-            </h3>
-
-            <p>
-              We determine what the job requires, including
-              materials, measurements and the work involved.
-            </p>
-
-          </div>
-
-
-
-          <div class="process-card">
-
-            <span class="process-number">
-              STEP 03 · EXECUTE
-            </span>
-
-            <h3>
-              We do the work
-            </h3>
-
-            <p>
-              Once the job is agreed, we carry out the repair,
-              build or carpentry work as required.
-            </p>
-
-          </div>
-
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- =====================================================
-         REAL WORK
-         ===================================================== -->
-
-    <section class="work" id="work">
-
-      <div class="container">
-
-        <div class="section-header">
-
-          <span class="section-tag">
-            Our Work
-          </span>
-
-          <h2 class="section-title">
-            Work we've actually done.
-          </h2>
-
-          <p class="section-description">
-            We would rather show real work than fill the website
-            with stock images or projects that aren't ours.
-          </p>
-
-        </div>
-
-
-        <div class="gallery">
-
-
-          <!-- REAL PHOTO -->
-          <div class="gallery-card">
-
-            <img
-              src="images/98658.jpg"
-              alt="Timber formwork by Biggie Woodworks"
-              loading="lazy"
-            >
-
-            <div class="gallery-caption">
-
-              <span>
-                Structural Carpentry
-              </span>
+              <span>REAL PROJECT</span>
 
               <strong>
                 Timber Formwork
@@ -1652,30 +202,177 @@
           </div>
 
 
+          <div class="hero-stamp">
 
-          <!-- REAL PHOTO -->
-          <div class="gallery-card">
+            <span>BW</span>
 
-            <img
-              src="images/94404.jpg"
-              alt="Handmade wooden signs by Biggie Woodworks"
-              loading="lazy"
-            >
-
-            <div class="gallery-caption">
-
-              <span>
-                Custom Woodwork
-              </span>
-
-              <strong>
-                Handmade Wooden Signs
-              </strong>
-
-            </div>
+            <small>
+              MOBILE<br>
+              WOODWORKS
+            </small>
 
           </div>
 
+        </div>
+
+      </div>
+
+
+      <div class="hero-bottom container">
+
+        <div>
+          <span class="mono">01</span>
+          <span>Repairs</span>
+        </div>
+
+        <div>
+          <span class="mono">02</span>
+          <span>Custom Builds</span>
+        </div>
+
+        <div>
+          <span class="mono">03</span>
+          <span>Site Work</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         SERVICES
+    ========================== -->
+
+    <section class="services section-dark" id="services">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div>
+
+            <span class="section-kicker">
+              What we do
+            </span>
+
+            <h2>
+              Woodwork for real problems.
+            </h2>
+
+          </div>
+
+          <p>
+            From a broken chair at home to timber work on a
+            construction site, we focus on practical jobs that
+            need proper hands-on execution.
+          </p>
+
+        </div>
+
+
+        <div class="service-grid">
+
+
+          <article class="service-card">
+
+            <span class="service-number">01</span>
+
+            <div class="service-icon">
+              ↗
+            </div>
+
+            <h3>
+              Furniture Repairs
+            </h3>
+
+            <p>
+              Broken joints, loose frames, damaged drawers,
+              worn furniture and other wooden repairs.
+            </p>
+
+            <a href="#contact">
+              Discuss a repair <span>→</span>
+            </a>
+
+          </article>
+
+
+
+          <article class="service-card featured">
+
+            <span class="service-number">02</span>
+
+            <div class="service-icon">
+              +
+            </div>
+
+            <h3>
+              Custom Woodwork
+            </h3>
+
+            <p>
+              Shelves, tables, fittings, signs and small
+              wooden pieces built to your measurements.
+            </p>
+
+            <a href="#contact">
+              Start a project <span>→</span>
+            </a>
+
+          </article>
+
+
+
+          <article class="service-card">
+
+            <span class="service-number">03</span>
+
+            <div class="service-icon">
+              □
+            </div>
+
+            <h3>
+              Timber Formwork
+            </h3>
+
+            <p>
+              Timber formwork and shuttering for concrete
+              construction, assembled where the work is needed.
+            </p>
+
+            <a href="#contact">
+              Discuss site work <span>→</span>
+            </a>
+
+          </article>
+
+
+
+          <article class="service-card">
+
+            <span class="service-number">04</span>
+
+            <div class="service-icon">
+              /
+            </div>
+
+            <h3>
+              Carpentry & Fitting
+            </h3>
+
+            <p>
+              General carpentry, wood fittings, assembly and
+              practical on-site installation work.
+            </p>
+
+            <a href="#contact">
+              Ask about your job <span>→</span>
+
+            </a>
+
+          </article>
 
         </div>
 
@@ -1685,9 +382,407 @@
 
 
 
-    <!-- =====================================================
-         CONTACT
-         ===================================================== -->
+    <!-- =========================
+         WHY US
+    ========================== -->
+
+    <section class="about" id="about">
+
+      <div class="container about-grid">
+
+        <div class="about-image">
+
+          <img
+            src="images/94404.jpg"
+            alt="Handmade wooden signs made by Biggie Woodworks"
+            loading="lazy"
+          >
+
+          <div class="about-image-caption">
+
+            <span>REAL WORK</span>
+
+            <strong>
+              Handmade Wooden Signs
+            </strong>
+
+          </div>
+
+        </div>
+
+
+        <div class="about-copy">
+
+          <span class="section-kicker">
+            Why Biggie Woodworks
+          </span>
+
+          <h2>
+            Don't transport the problem.
+            <em>Bring the carpenter to it.</em>
+          </h2>
+
+
+          <p class="lead">
+            Some furniture is too large, awkward or inconvenient
+            to carry to a workshop. Some jobs simply make more
+            sense on site.
+          </p>
+
+
+          <p>
+            That's where Biggie Woodworks comes in. We provide
+            mobile woodwork and carpentry services for homes,
+            businesses and construction sites around Nairobi.
+          </p>
+
+
+          <div class="advantage-list">
+
+            <div class="advantage">
+
+              <span class="advantage-number">
+                01
+              </span>
+
+              <div>
+
+                <h3>
+                  We come to you
+                </h3>
+
+                <p>
+                  Where the job can be handled on site,
+                  we bring the work to your location.
+                </p>
+
+              </div>
+
+            </div>
+
+
+            <div class="advantage">
+
+              <span class="advantage-number">
+                02
+              </span>
+
+              <div>
+
+                <h3>
+                  We assess before working
+                </h3>
+
+                <p>
+                  Photos, measurements and the actual problem
+                  help determine what the job requires.
+                </p>
+
+              </div>
+
+            </div>
+
+
+            <div class="advantage">
+
+              <span class="advantage-number">
+                03
+              </span>
+
+              <div>
+
+                <h3>
+                  We build for use
+                </h3>
+
+                <p>
+                  The goal isn't decoration alone. The finished
+                  work needs to function properly.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         WORK
+    ========================== -->
+
+    <section class="work section-dark" id="work">
+
+      <div class="container">
+
+        <div class="section-heading work-heading">
+
+          <div>
+
+            <span class="section-kicker">
+              Selected work
+            </span>
+
+            <h2>
+              Real work.
+              No stock photos.
+            </h2>
+
+          </div>
+
+          <p>
+            These are actual Biggie Woodworks projects.
+            More completed work will be added as the portfolio grows.
+          </p>
+
+        </div>
+
+
+        <div class="work-grid">
+
+          <article class="work-large">
+
+            <div class="work-image">
+
+              <img
+                src="images/98658.jpg"
+                alt="Timber formwork completed by Biggie Woodworks"
+                loading="lazy"
+              >
+
+            </div>
+
+            <div class="work-info">
+
+              <div>
+
+                <span class="mono">
+                  PROJECT 01
+                </span>
+
+                <h3>
+                  Timber Formwork
+                </h3>
+
+              </div>
+
+              <span class="work-arrow">
+                ↗
+              </span>
+
+            </div>
+
+          </article>
+
+
+          <article class="work-small">
+
+            <div class="work-image">
+
+              <img
+                src="images/94404.jpg"
+                alt="Handmade wooden signs completed by Biggie Woodworks"
+                loading="lazy"
+              >
+
+            </div>
+
+            <div class="work-info">
+
+              <div>
+
+                <span class="mono">
+                  PROJECT 02
+                </span>
+
+                <h3>
+                  Wooden Signs
+                </h3>
+
+              </div>
+
+              <span class="work-arrow">
+                ↗
+              </span>
+
+            </div>
+
+          </article>
+
+        </div>
+
+
+        <div class="portfolio-note">
+
+          <span>PORTFOLIO IN PROGRESS</span>
+
+          <p>
+            Every completed job gives us another project
+            to document. Check back as the portfolio grows.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         PROCESS
+    ========================== -->
+
+    <section class="process" id="process">
+
+      <div class="container">
+
+        <div class="process-intro">
+
+          <span class="section-kicker">
+            How it works
+          </span>
+
+          <h2>
+            Getting started is simple.
+          </h2>
+
+          <p>
+            You don't need to know exactly what the job requires.
+            Show us the problem and we'll start from there.
+          </p>
+
+        </div>
+
+
+        <div class="steps">
+
+
+          <div class="step">
+
+            <span class="step-number">
+              01
+            </span>
+
+            <div class="step-line"></div>
+
+            <h3>
+              Send the job
+            </h3>
+
+            <p>
+              WhatsApp us a photo, video, measurements or
+              simply explain what needs fixing or building.
+            </p>
+
+          </div>
+
+
+
+          <div class="step">
+
+            <span class="step-number">
+              02
+            </span>
+
+            <div class="step-line"></div>
+
+            <h3>
+              We assess it
+            </h3>
+
+            <p>
+              We work out what materials, measurements and
+              labour the job is likely to require.
+            </p>
+
+          </div>
+
+
+
+          <div class="step">
+
+            <span class="step-number">
+              03
+            </span>
+
+            <div class="step-line"></div>
+
+            <h3>
+              We do the work
+            </h3>
+
+            <p>
+              Once the job is agreed, we handle the repair,
+              build or carpentry work as required.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         SERVICE AREA
+    ========================== -->
+
+    <section class="area section-dark">
+
+      <div class="container area-inner">
+
+        <div>
+
+          <span class="section-kicker">
+            Where we work
+          </span>
+
+          <h2>
+            Nairobi is our workshop.
+          </h2>
+
+        </div>
+
+
+        <div class="area-copy">
+
+          <p>
+            Biggie Woodworks operates as a mobile service,
+            allowing us to work at homes, businesses and
+            construction sites.
+          </p>
+
+          <div class="area-tags">
+
+            <span>Nairobi</span>
+            <span>Mombasa Road</span>
+            <span>Syokimau</span>
+            <span>Surrounding Areas</span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         CONTACT CTA
+    ========================== -->
 
     <section class="contact" id="contact">
 
@@ -1695,11 +790,10 @@
 
         <div class="contact-box">
 
-
           <div class="contact-main">
 
-            <span class="section-tag">
-              Start a Job
+            <span class="section-kicker">
+              Start your job
             </span>
 
             <h2>
@@ -1707,76 +801,75 @@
             </h2>
 
             <p>
-              Send us a photo or description of the job on
-              WhatsApp. We'll start by understanding what you need.
+              Don't worry about explaining everything perfectly.
+              Send us a photo or video of the job on WhatsApp
+              and tell us what you need.
             </p>
 
 
-            <a
-              href="tel:0799258838"
-              class="phone"
-            >
-              0799 258 838
-            </a>
+            <div class="contact-actions">
+
+              <a
+                href="https://wa.me/254799258838"
+                class="btn btn-light"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                WhatsApp Biggie Woodworks
+                <span>↗</span>
+              </a>
 
 
-            <br>
+              <a
+                href="tel:0799258838"
+                class="contact-phone"
+              >
+                0799 258 838
+              </a>
 
-
-            <a
-              href="https://wa.me/254799258838"
-              class="button button-primary"
-              target="_blank"
-              rel="noopener"
-            >
-              Message on WhatsApp
-            </a>
+            </div>
 
           </div>
 
 
-
           <div class="contact-side">
 
+            <span class="contact-side-label">
+              QUICK START
+            </span>
 
-            <div class="contact-detail">
 
-              <small>
-                Service
-              </small>
+            <div class="contact-step">
+
+              <span>01</span>
 
               <strong>
-                Mobile Woodworks
+                Take a photo
               </strong>
 
             </div>
 
 
-            <div class="contact-detail">
+            <div class="contact-step">
 
-              <small>
-                Main Areas
-              </small>
+              <span>02</span>
 
               <strong>
-                Nairobi & Mombasa Road
+                Send it on WhatsApp
               </strong>
 
             </div>
 
 
-            <div class="contact-detail">
+            <div class="contact-step">
 
-              <small>
-                Contact
-              </small>
+              <span>03</span>
 
               <strong>
-                0799 258 838
+                Tell us what you need
               </strong>
 
             </div>
-
 
           </div>
 
@@ -1786,26 +879,64 @@
 
     </section>
 
-
   </main>
 
 
 
-  <!-- =======================================================
+  <!-- =========================
        FOOTER
-       ======================================================= -->
+  ========================== -->
 
   <footer>
 
-    <div class="container footer-content">
+    <div class="container footer-grid">
 
-      <div class="footer-brand">
-        Biggie Woodworks
+      <div>
+
+        <a href="#home" class="footer-brand">
+          Biggie Woodworks
+        </a>
+
+        <p>
+          Mobile woodworks, repairs & carpentry.
+        </p>
+
       </div>
 
-      <div class="footer-note">
-        MOBILE WOODWORKS · REPAIRS · CARPENTRY
+
+      <div class="footer-links">
+
+        <a href="#services">Services</a>
+        <a href="#work">Our Work</a>
+        <a href="#contact">Contact</a>
+
       </div>
+
+
+      <div class="footer-contact">
+
+        <span class="mono">
+          NAIROBI · KENYA
+        </span>
+
+        <a href="tel:0799258838">
+          0799 258 838
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="container footer-bottom">
+
+      <span>
+        © 2026 Biggie Woodworks
+      </span>
+
+      <span class="mono">
+        BUILT TO WORK.
+      </span>
 
     </div>
 
@@ -1813,69 +944,20 @@
 
 
 
-  <!-- =======================================================
-       JAVASCRIPT
-       ======================================================= -->
+  <!-- Floating WhatsApp -->
 
-  <script>
-
-    const menuButton = document.getElementById("menuButton");
-    const mobileMenu = document.getElementById("mobileMenu");
-
-    menuButton.addEventListener("click", function () {
-
-      const isOpen = mobileMenu.classList.toggle("active");
-
-      menuButton.setAttribute(
-        "aria-expanded",
-        isOpen ? "true" : "false"
-      );
-
-      menuButton.textContent = isOpen ? "×" : "☰";
-
-    });
+  <a
+    href="https://wa.me/254799258838"
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contact Biggie Woodworks on WhatsApp"
+  >
+    <span>WA</span>
+  </a>
 
 
-    document.querySelectorAll(".mobile-menu a").forEach(function (link) {
-
-      link.addEventListener("click", function () {
-
-        mobileMenu.classList.remove("active");
-
-        menuButton.setAttribute(
-          "aria-expanded",
-          "false"
-        );
-
-        menuButton.textContent = "☰";
-
-      });
-
-    });
-
-
-    /*
-      Close mobile menu if the screen becomes desktop-sized.
-    */
-
-    window.addEventListener("resize", function () {
-
-      if (window.innerWidth > 900) {
-
-        mobileMenu.classList.remove("active");
-
-        menuButton.setAttribute(
-          "aria-expanded",
-          "false"
-        );
-
-        menuButton.textContent = "☰";
-
-      }
-
-    });
-
-  </script>
+  <script src="script.js"></script>
 
 </body>
-  </html>
+</html>
